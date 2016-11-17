@@ -1,0 +1,23 @@
+{
+  "name": "polymerapp",
+  "authors": [
+    "Jacek Siciarek <siciarek@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements",
+    "app-elements": "PolymerElements/app-elements",
+    "iron-elements": "PolymerElements/iron-elements"
+  }
+}

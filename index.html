@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polymer Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+  <link rel="import" href="app-elements.html" />
+</head>
+
+<body class="container flex">
+
+<style is="custom-style">
+  .paper-toolbar h3 { @apply(--paper-font-display1); }
+</style>
+
+<paper-toolbar class="tall">
+  <h3>Kura dziura</h3>
+  <paper-tabs selected="0" class="bottom self-end">
+    <paper-tab>Pulpit</paper-tab>
+    <paper-tab>Profil</paper-tab>
+    <paper-tab>Twoje aukcje</paper-tab>
+    <paper-tab>Dodaj aukcję</paper-tab>
+    <paper-tab>Historia</paper-tab>
+    <paper-tab>Pomoc</paper-tab>
+  </paper-tabs>
+
+</paper-toolbar>
+
+<hr/>
+
+<paper-input label="Imię"></paper-input>
+<paper-input label="Nazwisko"></paper-input>
+<paper-input label="Data urodzenia"></paper-input>
+
+<paper-checkbox noink>Jabł</paper-checkbox>
+<paper-checkbox noink>Checkbox</paper-checkbox>
+
+<hr/>
+
+<div role="listbox">
+  <paper-item>Inbox</paper-item>
+  <paper-item>Starred</paper-item>
+  <paper-item>Sent mail</paper-item>
+</div>
+
+<style is="custom-style">
+  .cafe-header { @apply(--paper-font-headline); }
+  .cafe-light { color: var(--paper-grey-600); }
+  .cafe-location {
+    float: right;
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .cafe-reserve { color: var(--google-blue-500); }
+  iron-icon.star {
+    --iron-icon-width: 16px;
+    --iron-icon-height: 16px;
+    color: var(--paper-amber-500);
+  }
+  iron-icon.star:last-of-type { color: var(--paper-grey-500); }
+</style>
+
+<paper-card image="https://elements.polymer-project.org/bower_components/paper-card/demo/donuts.png" alt="Donuts">
+  <div class="card-content">
+    <div class="cafe-header">Cafe Basilico
+      <div class="cafe-location cafe-light">
+        <iron-icon icon="communication:location-on"></iron-icon>
+        <span>250ft</span>
+      </div>
+    </div>
+    <div class="cafe-rating">
+      <iron-icon class="star" icon="star"></iron-icon>
+      <iron-icon class="star" icon="star"></iron-icon>
+      <iron-icon class="star" icon="star"></iron-icon>
+      <iron-icon class="star" icon="star"></iron-icon>
+      <iron-icon class="star" icon="star"></iron-icon>
+    </div>
+    <p>$・Italian, Cafe</p>
+    <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting with 12 indoor seats plus patio seating.</p>
+  </div>
+  <div class="card-actions">
+    <p>Tonight's availability</p>
+    <div class="horizontal justified">
+      <paper-icon-button icon="icons:event"></paper-icon-button>
+      <paper-button>5:30PM</paper-button>
+      <paper-button>7:30PM</paper-button>
+      <paper-button>9:00PM</paper-button>
+    </div>
+    <paper-button class="cafe-reserve">Reserve</paper-button>
+  </div>
+</paper-card>
+
+</body>
+</html>
